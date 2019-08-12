@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/mystyle.css" media="screen" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js-game</title>
+
+  </head>
+  <body>
+    <div class="flex-container">
+
+  <h1>js-game</h1>
+
+  <div id="show1" class="hidden">
+
+  <img ID="img1" src="images/p1Img.jpg" alt="p1"
+  style = "width:300px; height:300px; display:none;">
+
+  <div id="Item1"></div>
+  <div id="Being1"></div>
+
+  <div></div>
+  <div id="panel1" class=hidden>
+  <button id="p1Ht">Hit</button>
+  <button id="p1Hl">Heal</button>
+  <button id="p1Yld">Yield</button>
+  </div>
+  <div></div>
+  <div id="myProgress1">
+    <div id="myBar1"></div>
+  </div>
+
+  </div>
+
+
+
+
+
+    <fieldset id="field1">
+    <legend>Player1</legend>
+    <div></div>
+
+      <div></div>
+
+
+        <label for="p1Name">Name</label>
+        <input type="text" id="p1Name" placeholder="Enter name" name="p1Name" required>
+
+      <p></p>
+
+
+      <select id="select1a">
+        <option class="s1a"selected="selected" disabled="disabled">Choose your item</option>
+  <!--hierboven (selected) apart erbij gezet om niet eerst Boots te zien in mijn keuzescherm maar chooze..
+en die moet evengoed een class hebben omdat dat de eerste is en telt vanaf 0-->
+        <option class="s1a" value="Boots">Boots</option>
+        <option class="s1a" value="Staff">Staff</option>
+        <option class="s1a" value="Sword">Sword</option>
+        <option class="s1a" value="Bow">Bow</option>
+      </select>
+
+
+      <p></p>
+
+
+      <select id="select1b">
+        <option class="s1b" selected="selected" disabled="disabled">Choose your being</option>
+        <option class="s1b" value="human">Human</option>
+        <option class="s1b" value="orc">Orc</option>
+        <option class="s1b" value="vampire">Vampire</option>
+        <option class="s1b" value="elf">Elf</option>
+      </select>
+
+
+      <div></div>
+      <input type="submit" id="submit1" class="regbtn" value="submit">
+      </fieldset>
+
+
+        <div class="vs">vs</div>
+
+        <div id="show2" class="hidden">
+
+        <img id="img2" src="images/p2Img.jpg" alt="p2"
+        style = "width:300px; height:300px;display:none">
+
+        <div id="Item2"></div>
+        <div id="Being2"></div>
+
+        <div></div>
+        <div id=panel2 class=hidden>
+        <button id="p2Ht">Hit</button>
+        <button id="p2Hl">Heal</button>
+        <button id="p2Yld">Yield</button>
+        </div>
+        <div></div>
+        <div id="myProgress2">
+        <div id="myBar2"></div>
+        </div>
+        </div>
+
+
+
+
+      <fieldset id="field2">
+      <legend>Player2</legend>
+
+
+
+
+
+
+        <label for="p2Name">Name</label>
+        <input type="text" id="p2Name" placeholder="Enter name" name="p2Name" required>
+
+        <p></p>
+
+        <select id="select2a">
+        <option class="s2a" selected="selected" disabled="disabled" >Choose your item</option>
+        <option class="s2a" value="Boots">Boots</option>
+        <option class="s2a" value="Staff">Staff</option>
+        <option class="s2a" value="Sword">Sword</option>
+        <option class="s2a" value="Bow">Bow</option>
+        </select>
+
+        <p></p>
+
+        <select id = "select2b">
+        <option class="s2b" selected="selected" disabled="disabled">Choose your being</option>
+        <option class="s2b" value="human">Human</option>
+        <option class="s2b" value="orc">Orc</option>
+        <option class="s2b" value="vampire">Vampire</option>
+        <option class="s2b" value="elf">Elf</option>
+
+        </select>
+
+
+        <input type="submit" id="submit2" class="regbtn" value="submit">
+        </fieldset>
+
+        <div id="log" class=hidden>log</div>
+
+    </div>
+
+
+
+
+
+  <script type="module" src="myscript.js"></script>
+  </body>
+</html>
